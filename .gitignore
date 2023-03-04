@@ -1,0 +1,12 @@
+*-[oi]* 
+err 
+abi.out* 
+slurm-* 
+log.[0-9]* 
+anaddb_* 
+fart.txt 
+anaddb0* 
+abi.ddb 
+PHBST* 
+anaddb.log
+anaddb.out

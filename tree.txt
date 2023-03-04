@@ -1,0 +1,516 @@
+.
++--- o-LaMoOX_a
+|   +--- InternalRelax
+|   |   +--- HydroStrain
+|   |   |   +--- Hydro_-0.001
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_-0.005
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.001
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.005
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.006
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.008
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.012
+|   |   |   |   +--- DFPT
+|   |   +--- Unstrained
+|   |   |   +--- DFPT
+|   +--- InternalRelax_nsym0
+|   +--- LatticeRelaxation_nsym0
+|   |   +--- HydroStress
+|   |   |   +--- Hydro_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- Hydro_1.0GPa
+|   |   +--- SigX
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.1GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.2GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-2.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- Strains
+|   |   |   +--- DFPT
+|   |   +--- Unstrained
+|   |   |   +--- DFPT
+|   |   |   |   +--- Codes
+|   |   |   |   |   +--- Olds
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- DFPT
+|   |   +--- SigX
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_1.0GPa
+|   |   |   |   +--- DFPT
++--- o-LaMoOX_b
+|   +--- LatticeRelaxation_nsym0
+|   |   +--- DFPT
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- DFPT
+|   |   +--- GS
+|   |   +--- SigX
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_1.0GPa
+|   |   |   |   +--- DFPT
++--- o-LaMoOX_e
+|   +--- LatticeRelaxation_nsym0
+|   |   +--- DFPT
+|   |   +--- GS
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- DFPT
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_1.0GPa
+|   |   |   |   +--- DFPT
++--- o-LaMoOX_f
+|   +--- LatticeRelaxation_nsym0
+|   |   +--- DFPT
+|   |   +--- GS
+|   |   +--- o-La2Mo2O9.cif
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- DFPT
+|   |   +--- SigX
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_1.0GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_-1.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_1.0GPa
+|   |   |   |   +--- DFPT
++--- o2-LaMoOX
+|   +--- LatticeRelaxation_nsym0
+|   |   +--- Condense
+|   |   |   +--- Codes
+|   |   |   +--- DFPT
+|   |   +--- DFPT
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- Condense
+|   |   |   +--- DFPT
+|   |   |   +--- SigX
+|   |   |   |   +--- SigX_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigX_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigX_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   +--- SigXY
+|   |   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigXY_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigXY_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ
+|   |   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   +--- SigY
+|   |   |   |   +--- SigY_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigY_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigY_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ
+|   |   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   +--- SigZ
+|   |   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigZ_0.0GPa
+|   |   |   |   |   +--- DFPT
+|   |   |   |   +--- SigZ_0.5GPa
+|   |   |   |   |   +--- DFPT
+|   |   +--- DFPT
++--- o2p-LaMoOX
+|   +--- LatticeRelaxation_nsym1
+|   |   +--- DFPT
+|   |   +--- SigX
+|   |   |   +--- SigX_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigX_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXY
+|   |   |   +--- SigXY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigXZ
+|   |   |   +--- SigXZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigXZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigY
+|   |   |   +--- SigY_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigY_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigYZ
+|   |   |   +--- SigYZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigYZ_0.5GPa
+|   |   |   |   +--- DFPT
+|   |   +--- SigZ
+|   |   |   +--- SigZ_-0.5GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.0GPa
+|   |   |   |   +--- DFPT
+|   |   |   +--- SigZ_0.5GPa
+|   |   |   |   +--- DFPT
++--- README
++--- README.md
++--- ScriptsAndCodes
+|   +--- Python

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#PBS -S /bin/bash
+#PBS -N k2E30DFPT
+#PBS -o output.txt
+#PBS -e error.txt
+#PBS -l walltime=4:00:00
+#PBS -l select=6:ncpus=24:mpiprocs=24:mem=12gb
+#PBS -P electro
+#PBS -M danielsptanner@gmail.com
+#PBS -q defaultq
+#PBS -m abe
+
+# Module load
+module purge
+module load sgi-mpt/2.17
+module load abinit/8.6.1
+module load intel-compilers/2018.2
+module load intel-mkl/2019.1
+module load libxc/4.3.4
+
+
+# Go to the directory where the job has been submitted 
+cd $PBS_O_WORKDIR
+export MPI_XPMEM_ENABLED=0
+
+mpiexec_mpt -n 144 abinit < abi.files && echo "fart" > fart.txt

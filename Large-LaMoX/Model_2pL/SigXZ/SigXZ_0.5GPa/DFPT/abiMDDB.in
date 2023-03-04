@@ -1,0 +1,18 @@
+abi.ddb
+ZZZ phonons on KK KK KK mesh
+15
+ddk_elec/abi-o_DS1_DDB
+1To8/abi-o_DS2_DDB
+9To16/abi-o_DS2_DDB
+17To24/abi-o_DS2_DDB
+25To32/abi-o_DS2_DDB
+33To40/abi-o_DS2_DDB
+41To48/abi-o_DS2_DDB
+49To56/abi-o_DS2_DDB
+57To64/abi-o_DS2_DDB
+65To72/abi-o_DS2_DDB
+73To80/abi-o_DS2_DDB
+81To88/abi-o_DS2_DDB
+89To96/abi-o_DS2_DDB
+97To104/abi-o_DS2_DDB
+ddk_elec/abi-o_DS3_DDB

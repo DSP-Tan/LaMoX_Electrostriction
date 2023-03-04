@@ -12,5 +12,6 @@ rsync -avh  \
 	--exclude "abi.ddb" \
 	--exclude "PHBST*" \
 	--exclude "anaddb.log"   \
+	--exclude "anaddb.out*"   \
 /scratch/ulg/phythema/dtanner/LaMoOX/o-La2Mo2O9/  .
 

@@ -161,12 +161,9 @@ tolwfr2    1.0d-22
 
 # Data set 3 : Response Function calculation - electric field perturbation, phonons, and strain
 
-rfphon3   1            # Will consider phonon-type perturbation 
 rfelfd3   3            # Electric Field
-rfstrs3   3            # Strains
 
 rfdir3    1   1   1    # Along all reduced coordinate axis 
-rfatpol3  1   104        # All the atoms will be displaced 
 
 nqpt3     1            # One wavevector is to be considered 
 qpt3      0.0 0.0 0.0  # This wavevector is q=0 (Gamma) 
@@ -193,3 +190,5 @@ ecutsm   0.5
             ngfft         144     144      72
 pawecutdg  30
 pawxcdev   0
+prtwf3  0
+prtden3 0

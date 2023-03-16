@@ -1,6 +1,6 @@
 #input for KTaO3
 
-ndtset    3
+ndtset 2
 
 autoparal 1
 
@@ -143,41 +143,22 @@ iscf1     7
 tolvrs1   1.0E-20
 nstep1    100
 
-# Data Set 2: Response Function calculation : d/dk 
-rfelfd2    2 
-rfdir2     1    1    1 
 
-nqpt2      1 
-qpt2       0.0  0.0  0.0  
+rfphon2   1            # Will consider phonon-type perturbation 
 
-getwfk2   -1 
-getden2   -1 
+rfdir2    1   1   1    # Along all reduced coordinate axis 
+rfatpol2 89 96
 
-kptopt2    2 
+nqpt2     1            # One wavevector is to be considered 
+qpt2      0.0 0.0 0.0  # This wavevector is q=0 (Gamma) 
 
-iscf2     -3 
-
-tolwfr2    1.0d-22 
-
-# Data set 3 : Response Function calculation - electric field perturbation, phonons, and strain
-
-rfphon3   1            # Will consider phonon-type perturbation 
-rfelfd3   3            # Electric Field
-rfstrs3   3            # Strains
-
-rfdir3    1   1   1    # Along all reduced coordinate axis 
-rfatpol3  1   104        # All the atoms will be displaced 
-
-nqpt3     1            # One wavevector is to be considered 
-qpt3      0.0 0.0 0.0  # This wavevector is q=0 (Gamma) 
-
-kptopt3   2            # Automatic generation of k points, taking 
+kptopt2   2            # Automatic generation of k points, taking 
                        # into account the time-reversal symmetry only 
 
-getwfk3   1            # Read the ground-state wavefunctions 
-getddk3   2
+getwfk2   1            # Read the ground-state wavefunctions 
+getddk2   2
                                               
-tolvrs3   1.0d-20      # SCF stopping criterion 
+tolvrs2   1.0d-20      # SCF stopping criterion 
                        
 
 

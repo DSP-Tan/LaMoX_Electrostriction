@@ -1,9 +1,9 @@
 #!/bin/bash
 # Submission script for nic5
-#SBATCH --job-name=SigZ0.5
-#SBATCH --time=25:00:00
+#SBATCH --job-name=25To32
+#SBATCH --time=48:00:00
 #SBATCH --ntasks=60
-#SBATCH --mem-per-cpu=1548
+#SBATCH --mem-per-cpu=5548
 #SBATCH --partition=batch
 #SBATCH --mail-user=danielsptanner@gmail.com
 

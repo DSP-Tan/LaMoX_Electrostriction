@@ -1,9 +1,9 @@
 #!/bin/bash
 # Submission script for nic5
-#SBATCH --job-name=SigZ0.5
-#SBATCH --time=25:00:00
-#SBATCH --ntasks=60
-#SBATCH --mem-per-cpu=1548
+#SBATCH --job-name=a-Bi2O3
+#SBATCH --time=00:01:00
+#SBATCH --ntasks=1
+#SBATCH --mem-per-cpu=860
 #SBATCH --partition=batch
 #SBATCH --mail-user=danielsptanner@gmail.com
 
@@ -28,12 +28,14 @@ module load HDF5/1.10.7-iimpi-2020b
 module load libxc/4.3.4-iccifort-2020.4.304
 
 
-EXE=/CECI/proj/phythema/abinit/9.4.0/bin/abinit
+EXE=/CECI/proj/phythema/abinit/9.4.0/bin/anaddb
 echo " exe = $EXE"
 MPIRUN="mpirun"
 echo " mpirun = $MPIRUN"
 LOG="log.${SLURM_JOB_ID}"
-$MPIRUN $EXE <abi.files > $LOG 2> err && echo fart > fart.txt
+
+$MPIRUN /CECI/proj/phythema/abinit/9.4.0/bin/mrgddb < abiMDDB.in 
+$MPIRUN $EXE < anaddb.files > anaddb.log && echo "ppFin" > PpFin.txt
 
 echo ""
 echo " ----------- End ----------- "

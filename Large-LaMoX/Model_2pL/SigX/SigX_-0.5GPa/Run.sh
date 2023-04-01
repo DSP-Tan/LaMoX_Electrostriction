@@ -1,7 +1,7 @@
 #!/bin/bash
 # Submission script for nic5
 #SBATCH --job-name=SigX-0.5
-#SBATCH --time=48:00:00
+#SBATCH --time=15:00:00
 #SBATCH --ntasks=60
 #SBATCH --mem-per-cpu=1548
 #SBATCH --partition=batch

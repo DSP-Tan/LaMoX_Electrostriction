@@ -1,6 +1,6 @@
 #input for non-centrosymmetric orthorhombic HfO2
 
-ndtset    1
+ndtset    2
 
 autoparal 1
 
@@ -8,54 +8,16 @@ autoparal 1
 ntypat   3
 natom    104
 typat    16*1 16*2 72*3
-znucl    57 42 8
-#acell 2*14.3094  7.1547 Angstrom
-nsym 1
+            znucl       57.00000   42.00000    8.00000
+acell 3*1
 
 rprim
   2.68234874165552E+01 -9.49085350058245E-01  5.66598735774824E-02
  -9.50555179070586E-01  2.72679235247978E+01 -8.27455158885647E-02
   2.26701483479052E-02 -4.16053385787483E-02  1.35672778085379E+01
 
-
-
-
-kptopt   1
-ngkpt    1 1 2
-nshiftk 1
-shiftk 
-0.5 0.5 0.5
-
-ecut       30
-pawecutdg  30
-pawxcdev   0
-ixc      -116133
-#There are 416 occupied bands
-nband    420
-diemac   4
-ecutsm   0.5
-
-# First SCF run       
-#irdwfk1   1
-nstep     100
-iscf      7
-tolvrs    1.0E-20
-ionmov    2
-optcell   2
-dilatmx   1.04
-tolmxf    1e-8
-ntime     250
-strtarget 5*0.0 -1.69946e-05
-
-# Printing flags
-prtden    1
-prteig    0
-prtwf     1
-prtposcar 0
-prtcif    0
-
-
-xred                       1.4473174667E-01  3.0215434916E-01  1.1300130031E-01
+             xred      4.2840069847E-01  4.3617376668E-01  8.2916734983E-01
+                       1.4473174667E-01  3.0215434916E-01  1.1300130031E-01
                        1.0531913409E-01  1.6716289468E-01  5.9274612549E-01
                        3.2765725717E-01  5.8903159433E-02  3.3231033049E-01
                        9.1149080065E-01  4.3822469462E-01  8.7653459830E-01
@@ -158,4 +120,36 @@ xred                       1.4473174667E-01  3.0215434916E-01  1.1300130031E-01
                        5.2463328755E-01  7.9354533188E-01  4.1112667177E-01
                        4.8345973807E-01  4.9862454140E-01  1.1283559197E-01
                        7.9577315190E-01  1.0204743195E+00  6.7246606333E-01
-            znucl       57.00000   42.00000    8.00000
+ 
+kptopt   1
+            ngfft         144     144      72
+ngkpt    1 1 2
+nshiftk 1
+shiftk 
+0.5 0.5 0.5
+ecut       30
+ecutsm   0.5
+pawecutdg  30
+pawxcdev   0
+ixc      -116133
+nband    420
+diemac   4
+
+# First SCF run       
+#irdwfk1   1
+nstep1    100
+iscf1     7
+tolvrs1   1.0E-20
+
+#Refinement using tolwfr
+nstep2    250
+getwfk2   -1
+iscf2     7
+tolwfr2   1.0E-20
+
+# Printing flags
+prtden    1
+prteig    0
+prtwf     1
+prtposcar 0
+prtcif    1

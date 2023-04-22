@@ -1,3 +1,5 @@
+#!/bin/bash
+
 Stresses=("SigX" "SigY" "SigZ" "SigYZ" "SigXZ" "SigXY")
 
 printf "%10s %10s %10s %10s\n" "Stress" "0.5" "0.0"  "-0.5"
